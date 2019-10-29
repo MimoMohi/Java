@@ -1,0 +1,21 @@
+package com.java
+
+/* 
+Part of a calculator
+
+*/
+public class Solution {
+    public static void main(String[] args) {
+        calculator(5, 9);
+    }
+    
+    public static void calculator(int a, int b)
+    {
+        int sum = a + b;
+        int product = a * b;
+        System.out.println(sum);
+        System.out.println(product);
+    }
+        
+        
+}
