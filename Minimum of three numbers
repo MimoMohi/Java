@@ -1,0 +1,32 @@
+package com.java;
+
+/* 
+Minimum of three numbers
+
+*/
+public class Solution {
+    public static int min(int a, int b, int c) {
+        if (a > b && a > c)
+    if (b > c)
+        return c;
+    else
+        return b;
+else if (b > a && b >c)
+    if (a > c)
+        return c;
+    else
+        return a;
+else if (c > a && c > b)
+    if (a > b)
+        return b;
+return a;
+    }
+
+    public static void main(String[] args) throws Exception {
+        System.out.println(min(1, 2, 3));
+        System.out.println(min(-1, -2, -3));
+        System.out.println(min(3, 5, 3));
+        System.out.println(min(5, 5, 10));
+    }
+
+}
