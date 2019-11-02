@@ -1,0 +1,20 @@
+package com.java;
+
+/* 
+Currency exchange 
+
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+    
+        System.out.println(convertEurToUsd(10, 1.25));
+       System.out.println(convertEurToUsd(5, 1.5));
+    }
+
+    public static double convertEurToUsd(int eur, double exchangeRate) {
+        
+        double convertEurToUsd = eur * exchangeRate;
+        return convertEurToUsd;
+    }
+}
