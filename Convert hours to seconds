@@ -1,0 +1,19 @@
+package com.java;
+
+/* 
+Time conversion
+
+*/
+
+public class Solution {
+    public static int convertToSeconds(int hour)
+    {
+        int result;
+        result = (hour * 3600);
+        return result;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(convertToSeconds(5));
+    }
+}
