@@ -1,0 +1,54 @@
+package com.company;
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int num1 = 0;
+        int num2 = 0;
+        char operator;
+        double answer = 0.0;
+
+        Scanner scanOobject = new Scanner(System.in);
+
+        System.out.println("Please enter your first number: ");
+        num1 = scanOobject.nextInt();
+
+        System.out.println("What operator do you need: ");
+        operator = scanOobject.next().charAt(0);
+
+        System.out.println("Please enter your second number: ");
+        num2 = scanOobject.nextInt();
+
+
+        switch (operator){
+            case '+':
+                answer = num1 + num2;
+                System.out.println(answer);
+                break;
+
+            case '-':
+                answer = num1 - num2;
+                System.out.println(answer);
+                break;
+
+            case '*':
+                answer = num1 * num2;
+                System.out.println(answer);
+                break;
+
+            case '/':
+                answer = num1 / num2;
+                System.out.println(answer);
+                break;
+
+
+
+        }
+
+
+
+    }
+}
